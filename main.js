@@ -17,7 +17,7 @@ Generates a new random silly story every time the button is pressed.
 
 
 // 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
-    const customName = document.getElementById('customname');
+    const customName = document.getElementById('customName');
     const randomize = document.querySelector('.randomize');
     const story = document.querySelector('.story');
 
@@ -46,8 +46,7 @@ Generates a new random silly story every time the button is pressed.
 
         if(customName.value !== '') {
             const name = customName.value;
-            
-            newStory = newStory.replace('Bob', customName)
+            newStory = newStory.replace('Bob', customName.value)
         }
 
         if(document.getElementById("uk").checked) {
